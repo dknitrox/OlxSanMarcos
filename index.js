@@ -5,11 +5,12 @@ const mongoose=require('mongoose');
 
 //Modules application
 	//Config
+
 const database=require('./config/database');
 
 const app=express();
 
-mongoose.connect(database.MONGO_URL_REMOTE);
+mongoose.connect(database.MONGO_URL_LOCAL);
 
 
 //Endpoints
