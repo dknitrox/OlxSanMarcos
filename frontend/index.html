@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Catalogo de Producto</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+	
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/body.css">
+	<link rel="stylesheet" type="text/css" href="css/main/main.css">
+	<link rel="stylesheet" type="text/css" href="css/header/header.css">
+	
+	<link rel="stylesheet" type="text/css" href="css/main/buscar-input.css">
+	<link rel="stylesheet" type="text/css" href="css/main/lista-producto.css">
+	<link rel="stylesheet" type="text/css" href="css/main/filtros.css">
+	<link href="https://file.myfontastic.com/YmJUfPpwy2GMnYpbPNqWHN/icons.css" rel="stylesheet">
+	
+
+
+</head>
+<body>
+	
+	<header class="header">
+
+		<div class="header__logo">
+			<a href="">Catalogo de Productos</a>
+		</div>
+
+		<div class="menu-principal" id="menu-principal">
+
+			<ul>
+				<li class="menu-principal__element"><a href="#">Principal</a></li>
+				<li class="menu-principal__element"><a href="#">Producto</a></li>
+				<li class="menu-principal__element"><a href="#">Contacto</a></li>
+			</ul>	
+
+		</div>
+
+		<div class="menu-secundario">
+
+			<i class="icon-menu" id="icono-menu"><a href="#"></a></i>
+
+			<ul>
+
+				<button class="menu-secundario__element " id='modal-boton'>Login</button>
+					
+				<button class="menu-secundario__element"><a href="#">Registro</a></button>
+			</ul>
+
+
+		</div>
+
+	</header>
+
+	<section class="main">
+		
+		<section class="buscar-input">
+
+			<div class="buscar-input__input">
+				<label>Articulo</label>
+				<input type="text" id="articulo" name="articulo" placeholder="Ingresar Articulo">
+
+			</div>
+
+			<div class="buscar-input__buscar">
+
+				<button>Buscar</button>
+
+			</div>
+
+			<div class="modal-login" id="modal">
+						<input type="text" name="nombre" placeholder="Nombre">
+
+						<input type="password" name="password" placeholder="Password">
+						<button >Ingresar</button>
+						<button id="modal-salir" >Salir</button>
+			</div>
+			
+		</section>
+
+		<section class="lista-producto">
+			
+			<article class="lista-producto__articulo">
+
+				<div class="lista-producto__articulo__imagen">
+
+					<img src="img/celular.jpg">
+
+				</div>
+
+				<div class="lista-producto__articulo__nombre-autor">
+
+					<strong>Articulo: </strong><p class="lista-producto__articulo__nombre">Moto gx4</p>
+
+					<strong>Autor: </strong><p class="lista-producto__articulo__autor">Kevin Mendoza Vasquez</p>
+				</div>
+
+				<div class="lista-producto__articulo__precio-fecha">
+
+					<strong>Precio: </strong><p class="lista-producto__articulo__precio">S/300.00</p>
+					<strong>Fecha: </strong><p class="lista-producto__articulo__fecha">26-04-17</p>
+				</div>
+				
+
+			</article>
+
+			<article class="lista-producto__articulo">
+
+				<div class="lista-producto__articulo__imagen">
+
+					<img src="img/celular.jpg">
+
+				</div>
+
+				<div class="lista-producto__articulo__nombre-autor">
+
+					<strong>Articulo: </strong><p class="lista-producto__articulo__nombre">Moto gx4</p>
+
+					<strong>Autor: </strong><p class="lista-producto__articulo__autor">Kevin Mendoza Vasquez</p>
+				</div>
+
+				<div class="lista-producto__articulo__precio-fecha">
+
+					<strong>Precio: </strong><p class="lista-producto__articulo__precio">S/300.00</p>
+					<strong>Fecha: </strong><p class="lista-producto__articulo__fecha">26-04-17</p>
+				</div>
+				
+
+			</article>
+
+			<article class="lista-producto__articulo">
+
+				<div class="lista-producto__articulo__imagen">
+
+					<img src="img/celular.jpg">
+
+				</div>
+
+				<div class="lista-producto__articulo__nombre-autor">
+
+					<strong>Articulo: </strong><p class="lista-producto__articulo__nombre">Moto gx4</p>
+
+					<strong>Autor: </strong><p class="lista-producto__articulo__autor">Kevin Mendoza Vasquez</p>
+				</div>
+
+				<div class="lista-producto__articulo__precio-fecha">
+
+					<strong>Precio: </strong><p class="lista-producto__articulo__precio">S/300.00</p>
+					<strong>Fecha: </strong><p class="lista-producto__articulo__fecha">26-04-17</p>
+				</div>
+				
+
+			</article>
+
+			<article class="lista-producto__articulo">
+
+				<div class="lista-producto__articulo__imagen">
+
+					<img src="img/celular.jpg">
+
+				</div>
+
+				<div class="lista-producto__articulo__nombre-autor">
+
+					<strong>Articulo: </strong><p class="lista-producto__articulo__nombre">Moto gx4</p>
+
+					<strong>Autor: </strong><p class="lista-producto__articulo__autor">Kevin Mendoza Vasquez</p>
+				</div>
+
+				<div class="lista-producto__articulo__precio-fecha">
+
+					<strong>Precio: </strong><p class="lista-producto__articulo__precio">S/300.00</p>
+					<strong>Fecha: </strong><p class="lista-producto__articulo__fecha">26-04-17</p>
+				</div>
+				
+
+			</article>
+
+			
+
+		</section>
+			
+		<aside class="filtros">
+
+			<div class="collection">
+		        
+		        <a href="#!" class="collection-item active">Reciente</a>
+		        <a href="#!" class="collection-item">Barato</a>
+		        <a href="#!" class="collection-item">Caro</a>
+      		</div>
+
+		</aside>
+
+		<article class="paginacion">
+
+				  <ul class="pagination">
+				    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+				    <li class="active"><a href="#!">1</a></li>
+				    <li class="waves-effect"><a href="#!">2</a></li>
+				    <li class="waves-effect"><a href="#!">3</a></li>
+				    <li class="waves-effect"><a href="#!">4</a></li>
+				    <li class="waves-effect"><a href="#!">5</a></li>
+				    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+  				</ul>
+
+			</article>
+
+	</section>
+	<script src="js/jquery.js"></script>
+	<script type="text/javascript">
+
+		var a =0;
+		var b=0;
+		var c=0;	
+
+		$(document).ready(function(){
+
+				$("#modal").hide();
+				
+
+				$("#modal-boton").on('click',function(){
+
+					if(a==0){
+						$("#modal").show(2000);
+						a=1;
+					}else{
+						$("#modal").hide(2000);
+						a=0;
+					}
+        			
+    			});
+
+    			$("#modal-salir").on('click',function(){
+
+						$("#modal").hide(2000);
+						
+        			
+    			});
+
+    			$("#icono-menu").click(function(){
+    				if(b==0){
+						$("#menu-principal").hide(2000);
+						b=1;
+					}else{
+						$("#menu-principal").show(3000);
+						b=0;
+					}
+    			});
+
+
+
+		});
+	</script>
+
+	
+	<script src="js/eventos.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+</body>
+</html>

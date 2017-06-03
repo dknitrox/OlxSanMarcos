@@ -1,0 +1,136 @@
+@import "../fuentes.css";
+
+
+.buscar-input{
+	
+
+	margin:20px auto 20px auto;
+	width: 95%;
+	line-height: 100px;
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+	.buscar-input__input{
+		width: 50%;
+		padding-top:15px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+
+	}
+
+		.buscar-input__input>input{
+			
+			height: 30px;
+			background-color: white;
+			width: 100%;
+			border:2px solid rgba(0,0,255,0.5);
+			border-radius: 5px;
+		}
+
+		.buscar-input__input>label{
+			font-size: 1em;
+			line-height: 1.4em;
+
+			width: 100%;
+			color:black;
+			margin-bottom: 5px;
+			font-weight: bold;
+			font-family: 'OpenSans';
+		}
+
+	.buscar-input__buscar{
+		margin: auto 0 auto 10px;
+		display: flex;
+		align-items: center;
+		width: 40%;
+
+	}
+		.buscar-input__buscar>button{
+			line-height: 40px;
+			border-radius: 5px;
+			margin-bottom: -8px;
+			color:black;
+			border:2px solid rgba(62, 125, 146,0.8);
+			background-color: rgba(62, 125, 146,0.7);
+			width: 80px;
+
+		}
+
+	.modal-login{
+	width: 100%;
+	display: flex;
+	padding: 5px 2px 0px 2px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background-color: rgba(0,0,0,0.8);
+	}
+
+	.modal-login>input{
+		list-style: none;
+		margin:0 auto;
+		overflow: hidden;
+		width: 45%;
+		margin-top: 5px;
+		margin-left: 4px;
+
+	}	
+
+	.modal-login>button{
+		line-height: 40px;
+		width: 100px;
+		margin:20px auto;
+		background-color: rgba(0,0,240,0.6);
+		color:white;
+		font-weight: bold;
+
+	}
+
+
+
+@media only screen and (max-width: 600px) {
+
+	.buscar-input{
+
+		width: 100%;
+	}
+
+	.buscar-input__input{
+		
+		width: 50%;
+	}
+	.buscar-input__buscar{
+		
+		width: 20%;
+	}
+}
+
+
+@media only screen and (min-width: 601px) {
+	.modal-login{
+	width: 60%;
+	display: flex;
+	padding: 5px 2px 0px 2px;
+	position: absolute;
+	right: : 50%;
+	top: 0;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: rgba(0,0,0,0.8);
+	}
+	.modal-login>button{
+		line-height: 40px;
+		width: 20%;
+		margin:20px auto;
+		background-color: rgba(0,0,240,0.6);
+		color:white;
+		font-weight: bold;
+
+	}
+}

@@ -1,0 +1,62 @@
+@import "../fuentes.css";
+
+.lista-producto{
+	width: 65%;
+	
+}
+
+
+	.lista-producto__articulo{
+		display: flex;
+		flex-wrap: wrap;
+		height: auto;
+	}
+
+		.lista-producto__articulo__imagen{
+			width: 25%;
+			
+		}
+
+			.lista-producto__articulo__imagen>img{
+				width: 100%;
+
+			}
+
+		.lista-producto__articulo__nombre-autor{
+			width:45%;
+			
+		}
+
+			.lista-producto__articulo__nombre{
+
+			}
+
+		.lista-producto__articulo__precio-fecha{
+			width: 30%;
+
+			height: 80px;
+		}
+
+	.paginacion{
+		
+		
+		text-align: center;
+		padding: 10px;
+		width: 100%;
+	}
+		.paginacion>ul{
+			width: 100%;
+		}
+
+@media only screen and (max-width: 600px) {
+
+.lista-producto{
+	
+}
+	.lista-producto__articulo{
+		
+		margin: 10px 0px 10px 0px;
+		padding: 10px 0 10px 0px;
+	}	
+
+}

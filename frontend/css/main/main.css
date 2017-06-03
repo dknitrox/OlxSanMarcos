@@ -1,0 +1,20 @@
+
+.main{
+
+	width: 90%;
+	margin:5px auto 10px auto;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+@media only screen and (max-width: 600px) {
+	
+
+.main{
+		width: 100%;
+	}
+}
+
+	
+
