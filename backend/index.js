@@ -2,12 +2,16 @@
 const mongoose=require('mongoose');
 const express=require('express');
 const app=express();
+const app2=express();
+
 const route=express.Router();
 const bodyParser=require('body-parser');
 const methodOverride=require('method-override');
 const apiRoute=require('./routers').api;
 const path=require('path');
 const frontEndPath=__dirname+"/../frontend";
+const bower=__dirname+"/../bower_components";
+
 console.log(frontEndPath);
 mongoose.connect('localhost:27017/test2');
 
@@ -16,7 +20,11 @@ app.use(methodOverride());
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 
-app.use('/', express.static(frontEndPath));
+app.use('/css', express.static(frontEndPath+"/css"));
+app.use('/js', express.static(frontEndPath+"/js"));
+app.use('/img', express.static(frontEndPath+"/img"));
+app.use('/fonts', express.static(frontEndPath+"/fonts"));
+app.use('/bower', express.static(bower));
 
 app.use('/api',apiRoute(express));
 

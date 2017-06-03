@@ -21,10 +21,15 @@
   "dependencies": {
     "body-parser": "^1.17.2",
     "express": "^4.15.2",
+    "jade": "^1.11.0",
     "method-override": "^2.3.9",
     "mongoose": "^4.9.5"
   },
   "devDependencies": {
-    "nodemon": "^1.11.0"
+    "express-logger": "0.0.3",
+    "nodemon": "^1.11.0",
+    "swagger-express": "^1.0.5",
+    "swagger-express-middleware": "^1.0.0-alpha.12",
+    "swagger-node-express": "^2.1.3"
   }
 }
