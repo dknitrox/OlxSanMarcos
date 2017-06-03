@@ -7,7 +7,7 @@ module.exports=function apiRoute(express,args){
 	    	res.send("Api up");
 	    })
 	    router.use('/user',userRouter(express));
-	    router.use('/producto',productoRouter(express));
+	    router.use('/products',productoRouter(express));
 
 	return router;
 }

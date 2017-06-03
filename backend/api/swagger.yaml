@@ -1,0 +1,76 @@
+---
+swagger: "2.0"
+info:
+  description: "Descripcion de la api OlxSanMarcos"
+  version: "1.0.0"
+  title: "OlxSanMarcos Api"
+host: "localhost:8000"
+basePath: "/api"
+schemes:
+- "http"
+produces:
+- "application/json"
+paths:
+  /products:
+    post:
+      tags:
+      - "Products"
+      summary: "Lista de Productos"
+      operationId: "productsPOST"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "body"
+        in: "body"
+        description: "Nombre del producto"
+        required: true
+        schema:
+              $ref: "#/definitions/Product"
+      responses:
+        405:
+          description: "Invalid input"
+        200:
+          description: "Exito"
+
+definitions:
+  Product:
+    type: "object"
+    properties:
+      description:
+        type: "string"
+        description: "Descripcion del Producto."
+      name:
+        type: "string"
+        description: "Nombre del producto"
+  Error:
+    type: "object"
+    properties:
+      code:
+        type: "integer"
+        format: "int32"
+      message:
+        type: "string"
+      fields:
+        type: "string"
+  inline_response_200:
+    properties:
+      _id:
+        type: "string"
+        description: "Identificador unico"
+      description:
+        type: "string"
+        description: "Descripcion del Producto."
+      name:
+        type: "string"
+        description: "Nombre del producto"
+  inline_response_default:
+    properties:
+      code:
+        type: "integer"
+        format: "int32"
+      message:
+        type: "string"
+      fields:
+        type: "string"
