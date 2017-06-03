@@ -1,0 +1,20 @@
+{
+  "name": "olx",
+  "description": "\"# OlxSanMarcos\"",
+  "main": "index.js",
+  "authors": [
+    "kevin <kevin.mendoza@unmsm.edu.pe>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/kevinlllR/OlxSanMarcos",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}
