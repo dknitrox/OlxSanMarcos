@@ -11,5 +11,12 @@
 <body ng-controller="adminController">
 <p>Admin html</p>
 <p>{{name}}</p>
+<p>{{apellido}}</p>
+
+<div ng-repeat="user in users">
+  {{user.name}}
+  {{user.userName}}
+  {{user.password}}
+</div>
 </body>
 </html>
