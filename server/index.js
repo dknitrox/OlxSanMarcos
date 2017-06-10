@@ -9,7 +9,7 @@ const bodyParser=require('body-parser');
 const methodOverride=require('method-override');
 const apiRoute=require('./routers').api;
 const path=require('path');
-const frontEndPath=__dirname+"/../frontend";
+const frontEndPath=__dirname+"/../web";
 const bower=__dirname+"/../bower_components";
 console.log(frontEndPath);
 mongoose.connect('localhost:27017/test2');
@@ -56,10 +56,7 @@ app.use('/fonts', express.static(frontEndPath+"/fonts"));
 app.use('/bower', express.static(bower));
 
 app.use('/api',apiRoute(express));
-app.get('/swagger.json', function(req, res) {
-  res.setHeader('Content-Type', 'application/json');
-  res.send(swaggerSpec);
-});
+
 app.get('/catalogo',(req,res)=>{
 	res.sendFile('index.html',{root:frontEndPath});
 })
